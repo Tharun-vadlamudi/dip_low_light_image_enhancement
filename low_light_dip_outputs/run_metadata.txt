@@ -1,0 +1,16 @@
+=====================================================
+DIGITAL IMAGE PROCESSING (CSE4007) EXPERIMENT METADATA
+=====================================================
+Execution Timestamp: 2026-10-16 09:15:21
+Evaluation Dataset Split: LOL eval15
+Number of Evaluated Image Pairs: 15
+Image Dimensions: 400 x 600 x 3 (RGB uint8)
+Algorithms Tested:
+  1. Gamma Correction (gamma=0.4)
+  2. Global Luminance Histogram Equalization (YCrCb)
+  3. CLAHE on LAB L-channel (clip_limit=2.0, tile_grid=(8,8))
+  4. Single-Scale Retinex (SSR, sigma=80)
+  5. Experimental Hybrid (Gamma 0.6 + CLAHE 2.0 + FastNLMDenoising)
+Metrics Recorded: PSNR (dB), SSIM, Runtime (s), Mean Brightness, Contrast (StdDev), Shannon Entropy
+Hardware Platform: Local / CPU Execution (No GPU required)
+=====================================================
